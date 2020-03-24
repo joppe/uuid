@@ -1,0 +1,49 @@
+{
+  "name": "@apestaartje/uuid",
+  "version": "0.0.0",
+  "description": "A library for generating uuid.",
+  "scripts": {
+    "build": "npm run clean && node ./node_modules/.bin/tsc",
+    "clean": "rm -rf dist",
+    "lint": "tslint --config ./tslint.json --project tsconfig.json",
+    "prepublishOnly": "npm run build",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch"
+  },
+  "main": "dist/index",
+  "typings": "dist/index",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joppe/uuid"
+  },
+  "author": {
+    "name": "Joppe Aarts",
+    "email": "joppe@apestaartje.info"
+  },
+  "license": "MIT",
+  "keywords": [
+    "TypeScript"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-typescript": "^7.9.0",
+    "@types/jest": "^25.1.4",
+    "@types/node": "^13.9.2",
+    "babel-jest": "^25.1.0",
+    "coveralls": "^3.0.9",
+    "jest": "^25.1.0",
+    "ts-jest": "^25.2.1",
+    "tslint": "^6.1.0",
+    "tslint-microsoft-contrib": "^6.2.0",
+    "typescript": "^3.8.3"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@apestaartje/number": "^1.6.0",
+    "@apestaartje/string": "^2.4.0"
+  }
+}
